@@ -25,6 +25,7 @@ Step 1: Add the following to the <build> -> <plugins> block in your pom.xml:
 </configuration>
 </plugin>
 </plugins>
+	
 ---------------------------------------------------
 Step 2. Add the following dependencies to pom.xml:
 -------------------------------------------------
@@ -45,9 +46,9 @@ Step 2. Add the following dependencies to pom.xml:
 	<artifactId>webdrivermanager</artifactId>
 	<version>5.3.1</version>
 </dependency>
-----------------------------------------------------------
+	
 Step 3. Create the testng.xml file in the root directory
-----------------------------------------------------------
+----------------------------------------------------------	
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" verbose="10" name="Suite">
@@ -57,17 +58,21 @@ Step 3. Create the testng.xml file in the root directory
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+	
 ---------------------------------------------------------------
 
 Run Tests:
 To run the tests run the following command
 mvn clean install or mvn test
+	
 ------------------------------
 
 ### Report Generation:
 TestNG Reports are generated in the following path
+	
 ---------------
 target/surefire-reports/index.html
+	
 ----------------------------------------------
   
-  
+ 
